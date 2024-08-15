@@ -1,0 +1,184 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    background-attachment: scroll;
+    background-color: black;
+    background-size: cover;
+    background-position: right;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Menu */
+ul.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+ul.menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 3px;
+    background-color: #d87bc6;
+}
+
+ul.menu li a:hover {
+    background-color: #d87bc6;
+    color: #ffffff;
+}
+
+/* Content */
+.content {
+    display: flex;
+    justify-content: center; /* Center content */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    margin-top: 40px;
+}
+
+.infocontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
+
+.devpic {
+    margin: 0 20px;
+    text-align: center; /* Center the image on small screens */
+}
+
+.devpic img {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+}
+
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center; /* Center buttons */
+    flex-wrap: wrap; /* Wrap buttons on smaller screens */
+}
+
+.buttons button {
+    margin: 10px;
+    padding: 15px 25px;
+    background-color: #d87bc6;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buttons button:hover {
+    background-color: #d87bc6;
+}
+
+/* About Section */
+#aboutSection {
+    margin-top: 30px;
+    padding: 40px;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    max-width: 750px;
+    height: auto;
+    min-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #d87bc6;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 15px 5px rgba(216, 123, 198, 0.5);
+}
+
+#aboutSection h2 {
+    margin-top: 0;
+    font-size: 30px;
+}
+
+#aboutSection p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Responsive Styling */
+@media only screen and (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center content */
+    }
+
+    .devpic img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .buttons button {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    ul.menu li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    ul.menu li a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .devpic img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .buttons {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .buttons button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    #aboutSection {
+        padding: 20px;
+        max-width: 90%;
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    #aboutSection p {
+        font-size: 14px;
+    }
+}
